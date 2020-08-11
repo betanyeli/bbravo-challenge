@@ -3,13 +3,13 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import { ParallaxProvider } from "react-scroll-parallax";
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <ParallaxProvider y={[-20, 20]}>
+
       <App />
-    </ParallaxProvider>
+
   </React.StrictMode>,
   document.getElementById("root")
 );
