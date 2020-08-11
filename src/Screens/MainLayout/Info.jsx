@@ -10,14 +10,14 @@ export const Info = () => {
           <Grid item xs={12}>
           <Typography
         style={ {fontSize:'8vw',
-        fontWeight:800}}
+        fontWeight:600}}
           component="h1"
           variant="h2"
           align="center"
           color="initial"
-          
+          gutterBottom
         >
-          Meet new people!
+          Meet new people
         </Typography>
           </Grid>
         

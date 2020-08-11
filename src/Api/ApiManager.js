@@ -14,14 +14,14 @@ export const getData = async () => {
 };
 
 export const occupation = [
-  "Frontend Dev",
-  "Designer",
-  "KAM",
+  "Frontend Dev in Ecomsur",
+  "Designer in LATAM",
+  "KAM in HelloWine",
   "TikToker",
   "Musician",
-  "Product Owner",
-  "CTO",
-  "Data Scientist",
+  "Product Owner in OnTap Bar",
+  "CTO in AWS",
+  "Data Scientist in AT&T",
 ];
 
 export const hobbies = [
