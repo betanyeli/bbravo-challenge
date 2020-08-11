@@ -4,9 +4,9 @@ import {Typography} from '@material-ui/core';
 import Copyright from './Copyright'
 
 export const Footer = () => {
-  const classes = useStyles();
+  const styles = useStyles();
   return (
-    <footer className={classes.footer}>
+    <footer className={styles.footer}>
       <Typography variant="h6" align="center" gutterBottom>
         Tind-KedIn
       </Typography>

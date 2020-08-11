@@ -3,9 +3,9 @@ import useStyles from "./Styles";
 import { Typography, Container, Grid, Button } from "@material-ui/core";
 
 export const Info = () => {
-  const classes = useStyles();
+  const styles = useStyles();
   return (
-    <div className={classes.infoContent}>
+    <div className={styles.infoContent}>
       <Container maxWidth="sm">
           <Grid item xs={12}>
           <Typography
@@ -22,7 +22,7 @@ export const Info = () => {
           </Grid>
         
 
-        <div className={classes.infoButtons}>
+        <div className={styles.infoButtons}>
           <Grid container spacing={2} justify="center">
             <Grid item>
               <Button variant="outlined" color="secondary">

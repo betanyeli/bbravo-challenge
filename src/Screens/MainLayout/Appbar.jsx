@@ -4,11 +4,11 @@ import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import useStyles from "./Styles";
 
 const Appbar = () => {
-  const classes = useStyles();
+  const styles = useStyles();
   return (
-    <AppBar position="relative" className={classes.background}>
+    <AppBar position="relative" className={styles.background}>
       <Toolbar>
-        <FavoriteBorderIcon className={classes.icon} />
+        <FavoriteBorderIcon className={styles.icon} />
         <Typography variant="h6" color="inherit" noWrap>
           Tind-kedIn
         </Typography>
