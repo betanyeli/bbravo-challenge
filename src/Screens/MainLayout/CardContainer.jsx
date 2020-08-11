@@ -1,11 +1,21 @@
 import React, { useState, useEffect } from "react";
-import {Button, Card, CardActions, CardContent, CardMedia, Grid, Typography, Container} from "@material-ui/core";
+import {
+  Button,
+  Card,
+  CardActions,
+  CardContent,
+  CardMedia,
+  Grid,
+  Typography,
+  Container,
+} from "@material-ui/core";
 import useStyles from "./Styles";
 import * as ApiManager from "../../Api/ApiManager";
 
-
 export const CardContainer = () => {
   const classes = useStyles();
+  const occupation = ApiManager.occupation;
+  const hobbies = ApiManager.hobbies;
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -16,6 +26,11 @@ export const CardContainer = () => {
     }
     getData();
   }, []);
+
+  const randomizer = (arr) => {
+    let result = arr[Math.floor(Math.random() * arr.length)];
+    return result;
+  };
 
   return (
     <Container className={classes.cardGrid} maxWidth="md">
@@ -33,16 +48,26 @@ export const CardContainer = () => {
                   {card.name.title} . {card.name.last}
                 </Typography>
                 <Typography>
-                  This is a media card. You can use this section to describe the
-                  content.
+                  Hello, everyone! I'm {card.name.first}{" "}
+                  {card.gender === "male" ? (
+                    <span role="img" aria-label="male">
+                      🕺
+                    </span>
+                  ) : (
+                    <span role="img" aria-label="female">
+                      💃
+                    </span>
+                  )}{" "}
+                  , {card.dob.age} years old, from {card.location.city} -{" "}
+                  {card.location.country} . I am a {randomizer(occupation)} and I like to {randomizer(hobbies)}
                 </Typography>
               </CardContent>
               <CardActions>
                 <Button size="small" color="primary">
-                  View
+                  Send email
                 </Button>
                 <Button size="small" color="primary">
-                  Edit
+                  Call
                 </Button>
               </CardActions>
             </Card>
@@ -51,6 +76,6 @@ export const CardContainer = () => {
       </Grid>
     </Container>
   );
-}
+};
 
 export default CardContainer;
