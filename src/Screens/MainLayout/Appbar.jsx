@@ -1,14 +1,14 @@
 import React from "react";
 import { AppBar, Toolbar, Typography } from "@material-ui/core";
-import CameraIcon from "@material-ui/icons/PhotoCamera";
+import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import useStyles from "./Styles";
 
 const Appbar = () => {
   const classes = useStyles();
   return (
-    <AppBar position="relative">
+    <AppBar position="relative" className={classes.background}>
       <Toolbar>
-        <CameraIcon className={classes.icon} />
+        <FavoriteBorderIcon className={classes.icon} />
         <Typography variant="h6" color="inherit" noWrap>
           Tind-kedIn
         </Typography>

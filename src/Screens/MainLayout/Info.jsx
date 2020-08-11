@@ -5,32 +5,33 @@ import { Typography, Container, Grid, Button } from "@material-ui/core";
 export const Info = () => {
   const classes = useStyles();
   return (
-    <div className={classes.heroContent}>
+    <div className={classes.infoContent}>
       <Container maxWidth="sm">
-        <Typography
+          <Grid item xs={12}>
+          <Typography
+        style={ {fontSize:'8vw',
+        fontWeight:800}}
           component="h1"
           variant="h2"
           align="center"
-          color="textPrimary"
-          gutterBottom
+          color="initial"
+          
         >
-          Album layout
+          Meet new people!
         </Typography>
-        <Typography variant="h5" align="center" color="textSecondary" paragraph>
-          Something short and leading about the collection below—its contents,
-          the creator, etc. Make it short and sweet, but not too short so folks
-          don&apos;t simply skip over it entirely.
-        </Typography>
-        <div className={classes.heroButtons}>
+          </Grid>
+        
+
+        <div className={classes.infoButtons}>
           <Grid container spacing={2} justify="center">
             <Grid item>
-              <Button variant="contained" color="primary">
-                Main call to action
+              <Button variant="outlined" color="secondary">
+                Sign in
               </Button>
             </Grid>
             <Grid item>
-              <Button variant="outlined" color="primary">
-                Secondary action
+              <Button variant="outlined" color="secondary">
+                Sign Up
               </Button>
             </Grid>
           </Grid>
