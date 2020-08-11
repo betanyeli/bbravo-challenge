@@ -8,12 +8,13 @@ import {
   Typography,
   Container,
   IconButton,
+  Tooltip,
 } from "@material-ui/core";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import StarIcon from "@material-ui/icons/Star";
 import EmailIcon from "@material-ui/icons/Email";
 import CallIcon from "@material-ui/icons/Call";
-import ReportIcon from '@material-ui/icons/Report';
+import ReportIcon from "@material-ui/icons/Report";
 import useStyles from "./Styles";
 import * as ApiManager from "../../Api/ApiManager";
 
@@ -69,23 +70,35 @@ export const CardContainer = () => {
                 </Typography>
               </CardContent>
               <CardActions>
-                <IconButton color="secondary" aria-label="add to favorites">
-                  <FavoriteIcon />
-                </IconButton>
+                <Tooltip title="Match!" aria-label="Match">
+                  <IconButton color="secondary">
+                    <FavoriteIcon />
+                  </IconButton>
+                </Tooltip>
 
-                <IconButton color="primary" aria-label="add to favorites">
+                <Tooltip title="Add to favorites" aria-label="add to favorites">
+                <IconButton color="primary">
                   <StarIcon />
                 </IconButton>
-                <IconButton color="primary" aria-label="add to favorites">
+                </Tooltip>
+
+                <Tooltip title="Send an email" aria-label="send an email">
+                <IconButton color="primary">
                   <EmailIcon />
                 </IconButton>
+                </Tooltip>
 
-                <IconButton color="primary" aria-label="add to favorites">
+                <Tooltip title="Call it" aria-label="call it">
+                <IconButton color="primary">
                   <CallIcon />
                 </IconButton>
-                <IconButton color="secondary" aria-label="add to favorites">
+                </Tooltip>
+
+                <Tooltip title="Report and block this user" aria-label="report and block">
+                <IconButton color="secondary">
                   <ReportIcon />
                 </IconButton>
+                </Tooltip>
               </CardActions>
             </Card>
           </Grid>
