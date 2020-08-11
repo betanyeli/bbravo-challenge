@@ -1,0 +1,15 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-bbravochallenge-dev-31956-authRole",
+            "UnauthRoleArn": "arn:aws:iam::115173459092:role/amplify-bbravochallenge-dev-31956-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::115173459092:role/amplify-bbravochallenge-dev-31956-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-bbravochallenge-dev-31956-deployment",
+            "UnauthRoleName": "amplify-bbravochallenge-dev-31956-unauthRole",
+            "StackName": "amplify-bbravochallenge-dev-31956",
+            "StackId": "arn:aws:cloudformation:us-east-1:115173459092:stack/amplify-bbravochallenge-dev-31956/13305bf0-dba3-11ea-9caf-0ae9b001be19",
+            "AmplifyAppId": "dofx35d094klf"
+        }
+    }
+}

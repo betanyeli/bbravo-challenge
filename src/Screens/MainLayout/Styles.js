@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
   infoContent: {
     color: '#e6a7c1a6',
     padding: theme.spacing(8, 0, 6),
-    backgroundImage: "url(/static/media/love.13695772.jpg)",
+    backgroundImage: "url(https://i.ibb.co/p0KfSz9/love.jpg)",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
